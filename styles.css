@@ -1,0 +1,150 @@
+/* Reset một số thuộc tính mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Phong cách cho toàn bộ trang */
+body {
+    background-color: #292825; /* Màu nền backgroud tổng */
+    font-family: Arial, sans-serif;
+}
+
+/* Phong cách cho phần chứa */
+.container {
+    width: 100%;
+    max-width: 400px; /* Chiều rộng tối đa */
+    margin: 100px auto; /* Giữa trang */
+    padding: 20px;
+    background-color: #ffffff; /* Màu nền cho đăng nhập form */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Bóng đổ */
+    border-radius: 8px; /* Bo tròn các góc */
+    border: 2px solid #ccc; /* Viền bao quanh phần đăng nhập */
+}
+/* Phong cách cho tiêu đề */
+h1 {
+    text-align: center;
+    color: #000000; /* Màu chữ đăng nhập lớn */
+    margin-bottom: 20px;
+}
+
+/* Phong cách cho form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Khoảng cách giữa các ô nhập */
+}
+
+/* Phong cách cho các ô nhập */
+input {
+    padding: 10px;
+    border: 1px solid #ddd; /* Viền nhẹ */
+    border-radius: 5px; /* Bo tròn */
+    font-size: 14px;
+}
+
+/* Phong cách cho các nút */
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000000;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* Nút đăng nhập */
+button.login {
+    background-color: #1e1e1e; /* Màu nền mặc định */
+}
+
+button.login:hover {
+    background-color: #000000; /* Màu tối hơn khi hover */
+}
+
+/* Phong cách cho các liên kết */
+.links {
+    text-align: center;
+    margin-top: 20px; /* Tăng khoảng cách giữa nút đăng nhập và nút liên kết */
+}
+
+.links button {
+    background-color: transparent; /* Nền trong suốt */
+    color: #1e1e1e; /* Màu xanh giống Facebook */
+    text-decoration: underline; /* Gạch chân */
+}
+
+/* Phong cách cho nút đăng nhập bằng mạng xã hội */
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0; /* Khoảng cách giữa form và nút mạng xã hội */
+}
+
+/* Facebook */
+.social-login .login-facebook {
+    background-color: #1877F2; /* Màu xanh dương của Facebook */
+    color: #fff; /* Màu chữ trắng */
+    border: none; /* Bỏ viền */
+    padding: 10px; /* Khoảng cách bên trong */
+    border-radius: 5px; /* Bo tròn góc */
+    cursor: pointer; /* Hiển thị con trỏ khi hover */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu mượt mà */
+}
+
+.social-login .login-facebook:hover {
+    background-color: #145DBF; /* Màu xanh đậm hơn khi hover */
+}
+
+/* Google */
+.social-login .login-google {
+    background-color: #DB4437; /* Màu đỏ của Google */
+    color: #fff; /* Màu chữ trắng */
+    border: none; /* Bỏ viền */
+    padding: 10px; /* Khoảng cách bên trong */
+    border-radius: 5px; /* Bo tròn góc */
+    cursor: pointer; /* Hiển thị con trỏ khi hover */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu mượt mà */
+}
+
+.social-login .login-google:hover {
+    background-color: #C13529; /* Màu đỏ đậm hơn khi hover */
+}
+
+/* Phong cách cho biểu tượng mạng xã hội */
+.facebook, .google {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Biểu tượng */
+.facebook::before {
+    content: url('facebook-icon.png'); /* Thay thế bằng đường dẫn đến biểu tượng Facebook */
+    margin-right: 5px; /* Khoảng cách giữa biểu tượng và chữ */
+}
+
+.google::before {
+    content: url('google-icon.png'); /* Thay thế bằng đường dẫn đến biểu tượng Google */
+    margin-right: 5px; /* Khoảng cách giữa biểu tượng và chữ */
+}
+
+/* Phong cách cho nút quên mật khẩu */
+.forgot-password {
+    text-align: right; /* Căn phải cho nút quên mật khẩu */
+    margin-top: 10px; /* Khoảng cách trên nút */
+}
+
+.forgot-password button {
+    background-color: transparent; /* Nền trong suốt */
+    color: #464b4f; /* Màu xanh giống Facebook */
+    text-decoration: underline; /* Gạch chân */
+    border: none; /* Không có viền */
+    cursor: pointer; /* Con trỏ khi hover */
+}
+
+.forgot-password button:hover {
+    color: #000000; /* Màu tối hơn khi hover */
+}

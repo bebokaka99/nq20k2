@@ -1,0 +1,435 @@
+ /* Đặt lại một số phong cách mặc định của trình duyệt */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Phong cách cơ bản cho phần đầu trang */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container căn giữa và giới hạn chiều rộng */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+/* Phong cách cho logo */
+.logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Menu điều hướng */
+.nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.nav ul li {
+    margin: 0 10px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav ul li a:hover {
+    color: #ffcc00;
+}
+/* Thay đổi màu nền tổng thể thành màu đen */
+body {
+background-color: #54504e; /* Màu nền đen cho toàn bộ trang */
+color: #fff; /* Màu chữ trắng để dễ đọc */
+}
+
+/* Thay đổi màu nền cho các phần cụ thể nếu cần */
+.header {
+background-color: #393939; /* Màu nền header */
+}
+
+.footer-bar {
+background-color: #222; /* Màu nền footer */
+}
+
+.hot-comics-container, .packages-container {
+background-color: #333; /* Màu nền cho các phần Truyện Hot và Gói Thể Hiện Truyện */
+}
+
+/* Thay đổi màu cho các liên kết */
+a {
+color: #fff; /* Màu chữ cho liên kết */
+}
+
+a:hover {
+color: #ffcc00; /* Màu chữ cho liên kết khi hover */
+}
+
+
+/* Thanh tìm kiếm */
+.search-bar {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Đẩy thanh tìm kiếm sang bên phải */
+}
+
+.search-bar form {
+    display: flex;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px 15px;
+    border: 2px solid #ffffff; /* Viền vàng để nổi bật */
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #ffffff; /* Thay đổi màu viền khi ô nhập được chọn */
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff; /* Màu nền cho nút tìm kiếm */
+    color: #000;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #e6b800; /* Màu nền khi hover */
+}    
+.user-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.user-actions a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.user-actions .login {
+    background-color: #000;
+    color: #fff;
+}
+
+.user-actions .register {
+    background-color: #fff;
+    color: #000;
+}
+
+.user-actions .login:hover {
+    background-color: #333;
+}
+
+.user-actions .register:hover {
+    background-color: #ddd;
+}
+
+/* Phong cách cơ bản cho thanh dưới */
+.footer-bar {
+    background-color: #CC6600; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 15px 0;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.footer-link:hover {
+    color: #ffcc00;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #780000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Đặt bố cục cho menu thể loại */
+.genre-menu-container {
+    width: 80%; /* Giữ chiều rộng tổng thể */
+    margin: 0 auto; /* Giữa theo chiều ngang */
+}
+
+.genre-title {
+    width: 100%; /* Đặt chiều rộng tiêu đề 100% */
+    text-align: left; /* Căn trái */
+    color: #ffffff; /* Màu chữ trắng */
+    font-size: 2rem; /* Tăng kích thước chữ */
+    margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+    margin-top: 20px; /* Tạo khoảng cách phía trên tiêu đề */
+    padding-left: 0; /* Bỏ padding bên trái */
+}
+/* Định dạng chung cho các nút thể loại */
+.genre-button {
+    flex: 0 1 calc(14% - 10px); /* Mỗi button chiếm 14% chiều rộng (tăng từ 12.5% lên 14%) */
+    padding: 10px 12px; /* Tăng padding cho nút */
+    font-size: 0.85rem; /* Kích thước chữ */
+    text-align: center; /* Canh giữa */
+    color: #fff;
+    border: 2px solid transparent; /* Viền cho nút */
+    border-radius: 10px; /* Bo góc viền */
+    text-decoration: none; /* Bỏ gạch chân */
+    background-color: #555658; /* Màu nền mặc định cho nút */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Đặt bố cục cho menu thể loại */
+.genre-menu {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các button xuống hàng */
+    justify-content: center; /* Căn giữa các button */
+    gap: 12px; /* Khoảng cách giữa các button (tăng từ 10px lên 12px) */
+    margin: 0 auto; /* Căn giữa menu */
+    padding: 10px; /* Padding cho menu thể loại */
+    background-color: #444; /* Nền cho menu thể loại */
+    border-radius: 10px; /* Bo góc cho nền menu */
+}
+/* bố cục cho lọc truyện*/
+/* Container cho thanh lọc */
+.filter-container {
+    width: 80%; /* Giữ chiều rộng tổng thể */
+    margin: 20px auto; /* Giữa theo chiều ngang với khoảng cách phía trên */
+}
+
+/* Tiêu đề cho thanh lọc */
+.filter-title {
+    width: 100%; /* Đặt chiều rộng tiêu đề 100% */
+    text-align: left; /* Căn trái */
+    color: #ffffff; /* Màu chữ trắng */
+    font-size: 2rem; /* Tăng kích thước chữ */
+    font-weight: bold;
+    margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+    margin-top: 20px; /* Tạo khoảng cách phía trên tiêu đề */
+    padding-left: 0; /* Bỏ padding bên trái */
+}
+/* Đặt bố cục cho các nút lọc */
+.filter-buttons {
+    display: flex; /* Sắp xếp các nút thành hàng ngang */
+    flex-wrap: wrap; /* Cho phép các nút xuống hàng nếu cần */
+    justify-content: flex-start; /* Căn trái các nút */
+    gap: 10px; /* Khoảng cách giữa các nút */
+    padding: 10px;
+    margin: 0 auto; /* Căn giữa menu */
+    padding: 10px; /* Padding cho menu lọc */
+    background-color: #444; /* Nền cho menu lọc */
+    border-radius: 10px; /* Bo góc cho nền menu */
+}
+
+/* Định dạng cho các nút lọc */
+.filter-button {
+    flex: 0 1 calc(14% - 10px); /* Mỗi button chiếm 14% chiều rộng */
+    padding: 10px 12px; /* Padding cho nút */
+    font-size: 1.0rem; /* Kích thước chữ cho nút */
+    text-align: center; /*canh giữa*/
+    color: #fff; /* Màu chữ trắng */
+    border: 2px solid #fff; /* Viền cho nút */
+    border-radius: 5px; /* Bo góc viền */
+    text-decoration: none; /* Bỏ gạch chân */
+    background-color: transparent; /* Màu nền mặc định cho nút */
+    transition: background-color 0.3s, border-color 0.3s; /* Hiệu ứng chuyển đổi */
+}
+
+/* Hiệu ứng hover cho nút lọc */
+.filter-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Màu nền khi hover */
+    border-color: #ffcc00; /* Đổi màu viền khi hover */
+}
+/* Thanh gạch ngang phân cách */
+.filter-divider {
+    width: 80%; /* Chiều rộng thanh gạch ngang */
+    height: 2px; /* Chiều cao thanh gạch ngang */
+    background-color: #ffffff; /* Màu của thanh gạch ngang */
+    margin: 20px auto; /* Căn giữa thanh gạch ngang */
+}
+/* Phong cách gói truyện */
+.packages-container {
+    margin: 2px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.packages-title {
+    font-size: 2rem;
+    color: #ffffffd4;
+    margin-bottom: 10px;
+}
+
+.packages {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.package-card {
+    background-color: #444;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.package-card:hover {
+    transform: scale(1.05);
+}
+
+.package-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.package-info h3 {
+    font-size: 1.1rem;
+    color: #fff;
+    margin: 5px 0;
+}
+
+.package-info p {
+    font-size: 0.9rem;
+    color: #b3b3b3;
+}
+.hot-comics-container {
+margin-top: 20px;
+width: 90%;
+max-width: 1200px;
+background-color: #808080; /* Màu nền xám */
+border-radius: 10px; /* Bo tròn khung */
+padding: 20px; /* Khoảng cách bên trong */
+}
+
+/* Phong cách cho phần Gói Thể Hiện Truyện */
+.packages-container {
+margin: 20px auto;
+width: 90%;
+max-width: 1200px;
+background-color: #808080; /* Màu nền xám */
+border-radius: 10px; /* Bo tròn khung */
+padding: 20px; /* Khoảng cách bên trong */
+}
+.comic-card:hover, .package-card:hover {
+transform: scale(1.05);
+background-color: #4d4d4d; /* Màu nền nhấn khi hover */
+}
+
+.nav-button:hover {
+background-color: #555; /* Màu nền nút khi hover */
+}
+.search-bar input[type="text"] {
+border: 2px solid #ffcc00; /* Viền vàng để nổi bật */
+}
+
+.user-actions .login:hover {
+background-color: #ffcc00;  
+color: #000;
+}
+.hot-comics-container, .packages-container {
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.comic-card, .package-card {
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+.nav ul {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hot-comics-container, .packages-container {
+    padding: 10px;
+    width: 100%;
+}
+}
+.comic-card {
+text-decoration: none; /* Loại bỏ dấu gạch chân */
+color: inherit; /* Giữ màu chữ như màu mặc định */
+}
+
+.comic-card:hover {
+text-decoration: underline; /* Có thể thêm gạch chân khi di chuột, nếu muốn */
+}
+.package-card:hover {
+    text-decoration: underline; /* Có thể thêm gạch chân khi di chuột, nếu muốn */
+}
+.package-card {
+    text-decoration: none; /* Loại bỏ dấu gạch chân */
+    color: inherit; /* Giữ màu chữ như màu mặc định */
+}
+
+.package-card:hover {
+    text-decoration: underline; /* Có thể thêm gạch chân khi di chuột, nếu muốn */
+}

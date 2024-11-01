@@ -1,0 +1,416 @@
+/* Đặt lại một số phong cách mặc định của trình duyệt */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Phong cách cơ bản cho phần đầu trang */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container căn giữa và giới hạn chiều rộng */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+/* Phong cách cho logo */
+.logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Menu điều hướng */
+.nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.nav ul li {
+    margin: 0 10px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav ul li a:hover {
+    color: #ffcc00;
+}
+/* Thay đổi màu nền tổng thể thành màu đen */
+body {
+background-color: #54504e; /* Màu nền đen cho toàn bộ trang */
+color: #fff; /* Màu chữ trắng để dễ đọc */
+}
+
+/* Thay đổi màu nền cho các phần cụ thể nếu cần */
+.header {
+background-color: #393939; /* Màu nền header */
+}
+
+.footer-bar {
+background-color: #222; /* Màu nền footer */
+}
+
+.hot-comics-container, .packages-container {
+background-color: #333; /* Màu nền cho các phần Truyện Hot và Gói Thể Hiện Truyện */
+}
+
+/* Thay đổi màu cho các liên kết */
+a {
+color: #fff; /* Màu chữ cho liên kết */
+}
+
+a:hover {
+color: #ffcc00; /* Màu chữ cho liên kết khi hover */
+}
+
+
+/* Thanh tìm kiếm */
+.search-bar {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Đẩy thanh tìm kiếm sang bên phải */
+}
+
+.search-bar form {
+    display: flex;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px 15px;
+    border: 2px solid #ffffff; /* Viền vàng để nổi bật */
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #ffffff; /* Thay đổi màu viền khi ô nhập được chọn */
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff; /* Màu nền cho nút tìm kiếm */
+    color: #000;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #e6b800; /* Màu nền khi hover */
+}    
+
+.user-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.user-actions a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.user-actions .login {
+    background-color: #000;
+    color: #fff;
+}
+
+.user-actions .register {
+    background-color: #fff;
+    color: #000;
+}
+
+.user-actions .login:hover {
+    background-color: #333;
+}
+
+.user-actions .register:hover {
+    background-color: #ddd;
+}
+
+/* Phong cách cơ bản cho thanh dưới */
+.footer-bar {
+    background-color: #CC6600; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 15px 0;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.footer-link:hover {
+    color: #ffcc00;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #780000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Phong cách thông tin truyện*/
+.comic-info-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+/* Ảnh bìa */
+.cover-image {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.cover-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+/*Chi Tiết truyện*/
+.comic-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+/*Tên Truyện*/
+.comic-title {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+/*Chi tiết truyện*/
+.comic-meta {
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    display: grid;
+    gap: 5px;
+    margin-left: 5px; /* Điều chỉnh để thẳng hàng với tên truyện */
+}
+
+.info-row {
+    display: grid;
+    grid-template-columns: 120px auto;
+}
+/*Chi tiết tác giả,...*/
+.info-label {
+    font-weight: bold;
+    color: #ffffff;
+    width: 120px; /* Đặt độ rộng cố định để căn các nhãn thẳng hàng */
+    color: #ffffff;
+}
+
+.info-content {
+    color: #ffffff;
+    text-align: left;
+}
+/*Các nút đọc*/
+.action-buttons {
+    display: flex;
+    gap: 10px; /* Khoảng cách giữa các nút */
+    margin-top: 10px;
+}
+
+.action-button {
+    padding: 10px 20px; /* Kích thước nút lớn hơn */
+    font-size: 1rem; /* Tăng kích thước chữ */
+    background-color: #e57373;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.read-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00be20; /* Màu nền */
+    color: white; /* Màu chữ */
+    text-decoration: none; /* Không có gạch chân */
+    border-radius: 5px; /* Bo góc nút */
+    transition: background-color 0.3s;
+}
+
+.read-button:hover {
+    background-color: #00be20; /* Màu nền khi hover */
+}
+
+.follow {
+    background-color: #2196F3; /* Màu xanh dương cho nút Theo dõi */
+}
+
+.like {
+    background-color: #FF5722; /* Màu cam cho nút Thích */
+}
+
+.action-button:hover {
+    opacity: 0.8; /* Hiệu ứng mờ khi di chuột qua nút */
+}
+/* Căn chỉnh vùng chứa thể loại */
+.comic-genres {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Phong cách cho nút thể loại trong suốt */
+.genre-btn {
+    padding: 8px 15px;
+    background-color: transparent; /* Nền trong suốt */
+    color: #ffd500; /* Màu chữ nổi bật */
+    border: 1px solid #ffd500; /* Viền nổi bật */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.genre-btn:hover {
+    background-color: #ffb300; /* Màu nền khi hover */
+    color: rgb(255, 255, 255); /* Màu chữ khi hover */
+}
+/*Các nội dung còn lại*/
+.info-box {
+    margin: 20px 10%; /* Thu nhỏ khoảng cách trái phải */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h2 {
+    margin-top: 0;
+    color: #ffe100;
+}
+
+.info-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-box ul li {
+    margin: 5px 0;
+}
+
+.info-box textarea {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ffb300;
+    padding: 10px;
+}
+
+.submit {
+    background-color: #4CAF50; /* Màu xanh lá cho nút gửi bình luận */
+}
+.chapters-container {
+    border-radius: 10px;
+    color: #ffe100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 20px 10%;
+}
+
+.chapters-scroll {
+    max-height: 300px; /* Chiều cao tối đa của vùng cuộn */
+    overflow-y: auto; /* Thêm thanh cuộn nếu nội dung vượt quá chiều cao */
+    padding-right: 10px; /* Khoảng cách bên phải để tránh nội dung bị cắt */
+}
+
+.chapter-list {
+    list-style-type: none; /* Loại bỏ dấu đầu dòng */
+    padding: 0;
+}
+
+.chapter-list li {
+    margin: 10px 0; /* Khoảng cách giữa các chương */
+}
+
+.chapter-list a {
+    text-decoration: none; /* Bỏ gạch chân */
+    color: #fef1a8; /* Màu xanh dương cho liên kết */
+    transition: color 0.3s; /* Hiệu ứng chuyển màu khi di chuột */
+}
+
+.chapter-list a:hover {
+    color: #FF5722; /* Màu cam khi di chuột */
+}

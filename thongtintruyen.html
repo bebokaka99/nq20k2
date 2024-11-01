@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Truyện Nhanh GG</title>
+</head>
+<link rel="stylesheet" href="thongtintruyen.css">
+<body>
+<!-- Phần đầu trang -->
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="idex.html">
+                <img src="logotruyen.png" alt="Logo Truyện Tranh">
+            </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="idex.html">Trang chủ</a></li>
+                <li><a href="theloai.html">Thể loại</a></li>
+                <li><a href="#">Truyện mới</a></li>
+                <li><a href="#">Yêu thích</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <form action="/search" method="GET"> <!-- Thay đổi action tùy theo xử lý tìm kiếm -->
+                <input type="text" name="query" placeholder="Tìm kiếm truyện...">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <div class="user-actions">
+            <a href="login.html" class="login">Đăng nhập</a>
+            <a href="regist.html" class="register">Đăng ký</a>
+        </div>
+    </div>
+</header>
+
+<!-- Thanh điều hướng dưới (được di chuyển lên ngay dưới header) -->
+<div class="footer-bar">
+    <div class="footer-container">
+        <a href="idex.html" class="footer-link">Trang Chủ</a>
+        <div class="dropdown">
+            <span class="footer-link">Xếp Hạng</span>
+            <div class="dropdown-content">
+                <a href="#">Top Ngày</a>
+                <a href="#">Top Tuần</a>
+                <a href="#">Top Tháng</a>
+                <a href="#">Truyện Hot</a>
+                <a href="#">Đánh Giá</a>
+            </div>         
+        </div>
+        <!-- HTML -->
+<div class="dropdown">
+    <span class="footer-link">Thể loại</span>
+    <div class="dropdown-content">
+        <div class="column">
+            <a href="#">Action</a>
+            <a href="#">Adventure</a>
+            <a href="#">Fantasy</a>
+            <a href="#">Anime</a>
+        </div>
+        <div class="column">
+            <a href="#">Chuyển Sinh</a>
+            <a href="#">Cổ Đại</a>
+            <a href="#">Tu Tiên</a>
+            <a href="#">Comedy</a>
+        </div>
+        <div class="column">
+            <a href="#">Comic</a>
+            <a href="#">Drama</a>
+            <a href="#">Hồi Quy</a>
+            <a href="#">Ngôn Tình</a>
+        </div>
+        <div class="column">
+            <a href="#">Xuyên Không</a>
+            <a href="#">Manga</a>
+            <a href="#">Manua</a>
+            <a href="#">Manwa</a>
+            <a href="#">Truyện Màu</a>
+        </div>
+    </div>
+</div>
+        <a href="#" class="footer-link">Con Trai</a>
+        <a href="#" class="footer-link">Con Gái</a>
+        <a href="#" class="footer-link">Lịch sử</a>
+        <a href="#" class="footer-link">Theo dõi</a>
+        <a href="https://www.facebook.com/nq20k2" class="footer-link">Hỗ trợ</a>
+        <a href="#" class="footer-link">Thảo luận</a>
+        <a href="#" class="footer-link">Discord</a>
+    </div>
+</div>
+
+<!--Code hiển thị thông tin truyện-->
+<div class="comic-info-container">
+    <!-- Ảnh bìa -->
+    <div class="cover-image">
+        <img src="anhminhhoa.png" alt="Bìa Truyện">
+    </div>
+
+    <!-- Thông tin chi tiết truyện -->
+    <div class="comic-details">
+        <!-- Tên truyện -->
+        <h1 class="comic-title">Người Trên Vạn Người</h1>
+
+        <!-- Thông tin truyện -->
+        <div class="comic-meta">
+            <div class="info-row">
+                <div class="info-label"><i class="fa-solid fa-user"></i> Tác giả</div>
+                <div class="info-content">Đang cập nhật</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label"><i class="fa fa-rss"></i> Tình trạng</div>
+                <div class="info-content">Đang cập nhật</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label"><i class="fa-solid fa-thumbs-up"></i> Lượt thích</div>
+                <div class="info-content">1234</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label"><i class="fa-sharp fa-solid fa-heart"></i> Lượt theo dõi</div>
+                <div class="info-content">14948</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label"><i class="fa-regular fa-eye"></i> Lượt xem</div>
+                <div class="info-content">17,503,872</div>
+            </div>
+        </div>
+        <div class="comic-genres">
+            <a href="link-to-genre-1" class="genre-btn">Action</a>
+            <a href="link-to-genre-2" class="genre-btn">Adventure</a>
+            <a href="link-to-genre-3" class="genre-btn">Manua</a>
+            <a href="link-to-genre-4" class="genre-btn">Xuyên không</a>
+            <a href="link-to-genre-5" class="genre-btn">Truyện Màu</a>
+        </div>
+        <!-- Các nút chức năng -->
+        <div class="action-buttons">
+            <a href="trangdoctruyen.html" class="read-button">Đọc từ đầu</a>
+            <button class="action-button follow">Theo dõi</button>
+            <button class="action-button like">Thích</button>
+        </div>
+    </div>
+</div>
+<div class="info-box">
+    <h2>Giới Thiệu Về Truyện.</h2>
+    <br>
+    <p>Chào mừng bạn đến với Truyện Nhanh GG - TruyenNhanhGG</p>
+</div>
+
+<div class="chapters-container">
+    <h2>Danh Sách Chương</h2>
+    <br>
+    <div class="chapters-scroll">
+        <ul class="chapter-list">
+            <li><a href="trangdoctruyen.html">Chương 1</a></li>
+            <li><a href="#chapter2">Chương 2</a></li>
+            <li><a href="#chapter3">Chương 3</a></li>
+            <li><a href="#chapter4">Chương 4</a></li>
+            <li><a href="#chapter5">Chương 5</a></li>
+            <li><a href="#chapter6">Chương 6</a></li>
+            <li><a href="#chapter7">Chương 7</a></li>
+            <li><a href="#chapter8">Chương 8</a></li>
+            <li><a href="#chapter9">Chương 9</a></li>
+            <li><a href="#chapter10">Chương 10</a></li>
+            <li><a href="#chapter11">Chương 11</a></li>
+            <li><a href="#chapter12">Chương 12</a></li>
+            <li><a href="#chapter13">Chương 13</a></li>
+            <li><a href="#chapter14">Chương 14</a></li>
+            <li><a href="#chapter15">Chương 15</a></li>
+            <li><a href="#chapter16">Chương 16</a></li>
+            <li><a href="#chapter17">Chương 17</a></li>
+            <li><a href="#chapter18">Chương 18</a></li>
+            <li><a href="#chapter19">Chương 19</a></li>
+            <li><a href="#chapter20">Chương 20</a></li>
+            <!-- Thêm nhiều chương theo nhu cầu -->
+        </ul>
+    </div>
+</div>
+<div class="info-box">
+    <h2>Bình Luận</h2>
+    <textarea placeholder="Nhập bình luận của bạn tại đây..."></textarea>
+    <button class="action-button submit">Gửi Bình Luận</button>
+</div>
+
+</body>
+</html>

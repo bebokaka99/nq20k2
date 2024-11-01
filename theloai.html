@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Truyện Nhanh GG</title>
+</head>
+<link rel="stylesheet" href="theloai.css">
+<body>
+<!-- Phần đầu trang -->
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="idex.html">
+                <img src="logotruyen.png" alt="Logo Truyện Tranh">
+            </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="idex.html">Trang chủ</a></li>
+                <li><a href="theloai.html">Thể loại</a></li>
+                <li><a href="#">Truyện mới</a></li>
+                <li><a href="#">Yêu thích</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <form action="/search" method="GET"> <!-- Thay đổi action tùy theo xử lý tìm kiếm -->
+                <input type="text" name="query" placeholder="Tìm kiếm truyện...">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <div class="user-actions">
+            <a href="login.html" class="login">Đăng nhập</a>
+            <a href="regist.html" class="register">Đăng ký</a>
+        </div>
+    </div>
+</header>
+
+<!-- Thanh điều hướng dưới (được di chuyển lên ngay dưới header) -->
+<div class="footer-bar">
+    <div class="footer-container">
+        <a href="idex.html" class="footer-link">Trang Chủ</a>
+        <div class="dropdown">
+            <span class="footer-link">Xếp Hạng</span>
+            <div class="dropdown-content">
+                <a href="#">Top Ngày</a>
+                <a href="#">Top Tuần</a>
+                <a href="#">Top Tháng</a>
+                <a href="#">Truyện Hot</a>
+                <a href="#">Đánh Giá</a>
+            </div>         
+        </div>
+        <!-- HTML -->
+<div class="dropdown">
+    <span class="footer-link">Thể loại</span>
+    <div class="dropdown-content">
+        <div class="column">
+            <a href="#">Action</a>
+            <a href="#">Adventure</a>
+            <a href="#">Fantasy</a>
+            <a href="#">Anime</a>
+        </div>
+        <div class="column">
+            <a href="#">Chuyển Sinh</a>
+            <a href="#">Cổ Đại</a>
+            <a href="#">Tu Tiên</a>
+            <a href="#">Comedy</a>
+        </div>
+        <div class="column">
+            <a href="#">Comic</a>
+            <a href="#">Drama</a>
+            <a href="#">Hồi Quy</a>
+            <a href="#">Ngôn Tình</a>
+        </div>
+        <div class="column">
+            <a href="#">Xuyên Không</a>
+            <a href="#">Manga</a>
+            <a href="#">Manua</a>
+            <a href="#">Manwa</a>
+            <a href="#">Truyện Màu</a>
+        </div>
+    </div>
+</div>
+        <a href="#" class="footer-link">Con Trai</a>
+        <a href="#" class="footer-link">Con Gái</a>
+        <a href="#" class="footer-link">Lịch sử</a>
+        <a href="#" class="footer-link">Theo dõi</a>
+        <a href="https://www.facebook.com/nq20k2" class="footer-link">Hỗ trợ</a>
+        <a href="#" class="footer-link">Thảo luận</a>
+        <a href="#" class="footer-link">Discord</a>
+    </div>
+</div>
+
+    <!--Lọc truyện-->
+<div class="filter-container">
+    <div class="filter-title">Lọc Truyện</div>
+    <div class="filter-buttons">
+        <a href="link-to-genre.html" class="filter-button">Hoàn Thành</a>
+        <a href="link-to-status.html" class="filter-button">Chưa Hoàn Thành</a>
+        <a href="link-to-genre.html" class="filter-button">Hàn Quốc</a>
+        <a href="link-to-status.html" class="filter-button">Nhật Bản</a>
+        <a href="link-to-status.html" class="filter-button">Trung Quốc</a>
+    </div>
+</div>
+    <!--Thanh ngang-->
+<div class="filter-divider"></div>
+    <!--Thể loại-->
+<div class="genre-menu-container">
+    <h1 class="genre-title">Thể loại</h1> 
+<div class="genre-menu">
+    <a href="#" class="genre-button">Action</a>
+    <a href="#" class="genre-button">Adventure</a>
+    <a href="#" class="genre-button">Anime</a>
+    <a href="#" class="genre-button">Chuyển Sinh</a>
+    <a href="#" class="genre-button">Cổ Đại</a>
+    <a href="#" class="genre-button">Tu Tiên</a>
+    <a href="#" class="genre-button">Comedy</a>
+    <a href="#" class="genre-button">Comic</a>
+    <a href="#" class="genre-button">Demons</a>
+    <a href="#" class="genre-button">Detective</a>
+    <a href="#" class="genre-button">Isekai</a>
+    <a href="#" class="genre-button">Ngôn Tình</a>
+    <a href="#" class="genre-button">Magic</a>
+    <a href="#" class="genre-button">Fantasy</a>
+    <a href="#" class="genre-button">Romance</a>
+    <a href="#" class="genre-button">Trọng Sinh</a>
+    <a href="#" class="genre-button">Hồi Quy</a>
+    <a href="#" class="genre-button">Webtoon</a>
+    <a href="#" class="genre-button">Xuyên Không</a>
+    <a href="#" class="genre-button">Manwa</a>
+    <a href="#" class="genre-button">Manua</a>
+    <a href="#" class="genre-button">Manga</a>
+    <a href="#" class="genre-button">Josei</a>
+    <a href="#" class="genre-button">Shounen</a>
+    <a href="#" class="genre-button">Shoujo</a>
+    <a href="#" class="genre-button">Slice of life</a>
+    <a href="#" class="genre-button">Sports</a>
+    <a href="#" class="genre-button">Truyện Màu</a>
+    </div>
+</div>
+    <!--Thanh ngang-->
+    <div class="filter-divider"></div>
+<!--Truyện gợi ý-->
+<div class="packages-container">
+    <h2 class="packages-title"><i class="fa-solid fa-upload"></i> Truyện mới cập nhật</h2>
+    <div class="packages">
+        <a href="idex.html" class="package-card">
+            <img src="https://cdn.glitch.global/b5f627b0-fd01-4806-998e-4841864dc9d6/hoiquygia.png?v=1730469050885" alt="Hồi Quy Giả">
+            <div class="package-info">
+                <h3>Hồi Quy Giả</h3>
+                <p>Chap 105</p>
+            </div>
+        </a>
+        <a href="idex.html" class="package-card">
+            <img src="https://cdn.glitch.global/b5f627b0-fd01-4806-998e-4841864dc9d6/caigiaphaitra.png?v=1730469034730" alt="Cái Giá Phải Trả">
+            <div class="package-info">
+                <h3>Cái Giá Phải Trả</h3>
+                <p>Chap 29  </p>
+            </div>
+        </a>
+        <a href="idex.html" class="package-card">
+            <img src="https://cdn.glitch.global/b5f627b0-fd01-4806-998e-4841864dc9d6/toantridocgia.png?v=1730469125707" alt="Toàn Trí Độc Giả">
+            <div class="package-info">
+                <h3>Toàn Trí Độc Giả</h3>
+                <p>Chap 234</p>
+            </div>
+        </a>
+        <a href="idex.html" class="package-card">
+            <img src="https://cdn.glitch.global/b5f627b0-fd01-4806-998e-4841864dc9d6/tacomotsontrai.png?v=1730469104462" alt="Ta Có Một Sơn Trại">
+            <div class="package-info">
+                <h3>Ta Có Một Sơn Trại</h3>
+                <p>Chap 1016</p>
+            </div>
+        </a>
+        <a href="idex.html" class="package-card">
+            <img src="https://cdn.glitch.global/b5f627b0-fd01-4806-998e-4841864dc9d6/talatade.png?v=1730469108876" alt="Ta Là Tà Đế">
+            <div class="package-info">
+                <h3>Ta Là Tà Đế</h3>
+                <p>Chap 517</p>
+            </div>
+        </a>
+        <a href="idex.html" class="package-card">
+            <img src="https://cdn.glitch.global/b5f627b0-fd01-4806-998e-4841864dc9d6/hoangtubanthuoc.png?v=1730469048767" alt="Hoàng Tử Bán Thuốc">
+            <div class="package-info">
+                <h3>Hoàng Tử Bán Thuốc </h3>
+                <p>Chap 52</p>
+            </div>
+        </a>
+        <a href="idex.html" class="package-card">
+            <img src="https://cdn.glitch.global/b5f627b0-fd01-4806-998e-4841864dc9d6/chilaanhbinhminh.png?v=1730469038819" alt="Chỉ Là Ánh Bình Minh">
+            <div class="package-info">
+                <h3>Chỉ Là Ánh Bình Minh</h3>
+                <p>Chap 48</p>
+            </div>
+        </a>
+        <a href="idex.html" class="package-card">
+            <img src="https://cdn.glitch.global/b5f627b0-fd01-4806-998e-4841864dc9d6/quytocluoibieng.png?v=1730469096586" alt="Quý Tộc Lười Biếng">
+            <div class="package-info">
+                <h3>Quý Tộc Lười Biếng</h3>
+                <p>Chap 123</p>
+            </div>
+        </a>
+        <a href="idex.html" class="package-card">
+            <img src="https://cdn.glitch.global/b5f627b0-fd01-4806-998e-4841864dc9d6/phongyeuvandao.png?v=1730469090086" alt="Phong Yêu Vấn Đạo">
+            <div class="package-info">
+                <h3>Phong Yêu Vấn Đạo</h3>
+                <p>Chap 100</p>
+            </div>
+        </a>
+        <a href="idex.html" class="package-card">
+            <img src="https://cdn.glitch.global/b5f627b0-fd01-4806-998e-4841864dc9d6/luyenkichithan.png?v=1730469069099" alt="Luyện Kí Chi Thần">
+            <div class="package-info">
+                <h3>Luyện Ký Chi Thần</h3>
+                <p>Chap 40</p>
+            </div>
+        </a>
+        <a href="idex.html" class="package-card">
+            <img src="https://cdn.glitch.global/b5f627b0-fd01-4806-998e-4841864dc9d6/nguyenton.png?v=1730469089658" alt="Nguyên Tôn">
+            <div class="package-info">
+                <h3>Nguyên Tôn</h3>
+                <p>Chap 938</p>
+            </div>
+        </a>
+        <a href="idex.html" class="package-card">
+            <img src="https://cdn.glitch.global/b5f627b0-fd01-4806-998e-4841864dc9d6/image.png?v=1730469066986" alt="Tái Thiết Hầm Ngục">
+            <div class="package-info">
+                <h3>Tái Thiết Hầm Ngục</h3>
+                <p>Chap 217</p>
+            </div>
+        </a>
+        <a href="idex.html" class="package-card">
+            <img src="https://cdn.glitch.global/b5f627b0-fd01-4806-998e-4841864dc9d6/tienvodeton.png?v=1730469121868" alt="Tiên Võ Đế Tôn">
+            <div class="package-info">
+                <h3>Tiên Võ Đế Tôn</h3>
+                <p>Chap 654</p>
+            </div>
+        </a>
+        <a href="idex.html" class="package-card">
+            <img src="https://cdn.glitch.global/b5f627b0-fd01-4806-998e-4841864dc9d6/meika.png?v=1730469079091" alt="Meika-San Can't Conceal Her Emotions">
+            <div class="package-info">
+                <h3>Meika-San</h3>
+                <p>Chap 64</p>
+            </div>
+        </a>
+    </div>
+</div>
+</body>
+</html>
+</body>
+</html>
