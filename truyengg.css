@@ -474,8 +474,6 @@ color: #ffcc00; /* Màu chữ cho liên kết khi hover */
         font-size: 14px; /* Kích thước chữ cho nút */
         text-decoration: none; /* Bỏ gạch chân */
     }
-
-    /* Thanh tìm kiếm nằm riêng biệt bên dưới */
     .search-bar {
         display: flex; /* Hiển thị thanh tìm kiếm */
         justify-content: center; /* Căn giữa thanh tìm kiếm */
@@ -491,5 +489,24 @@ color: #ffcc00; /* Màu chữ cho liên kết khi hover */
     .search-bar button {
         padding: 8px 12px; /* Đệm cho nút tìm kiếm */
         margin-left: 5px; /* Khoảng cách giữa ô tìm kiếm và nút */
+    }
+}
+@media (max-width: 768px) {
+    .footer-link {
+        display: none; /* Ẩn tất cả các nút */
+    }
+
+    /* Hiển thị các nút Trang chủ, Thể loại và Xếp hạng */
+    .footer-link:nth-child(1), /* Trang chủ */
+    .footer-link:nth-child(2), /* Thể loại */
+    .footer-link:nth-child(3),
+    .footer-link:nth-child(6) { /* Xếp hạng */
+        display: block;
+        margin: 0 3px; /* Khoảng cách bên trái và bên phải giữa các nút */
+        padding: 10px; /* Khoảng cách xung quanh chữ */
+    }
+
+    .footer-container {
+        justify-content: space-between; /* Căn đều các phần tử */
     }
 }

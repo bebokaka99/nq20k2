@@ -341,3 +341,71 @@ height: 2px; /* Chiều cao thanh gạch ngang */
 background-color: #ffffff; /* Màu của thanh gạch ngang */
 margin: 20px auto; /* Căn giữa thanh gạch ngang */
 }
+@media (max-width: 768px) {
+    /* Chỉnh sửa container của thanh điều hướng */
+    .header .container {
+        display: flex; /* Hiển thị theo hàng ngang */
+        align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+        justify-content: space-between; /* Căn đều giữa logo và user-actions */
+    }
+
+    /* Đặt logo ở bên trái */
+    .logo {
+        margin-right: 20px; /* Khoảng cách bên phải để tạo không gian giữa logo và các nút */
+        display: flex; /* Hiển thị flex để có thể căn giữa */
+    }
+
+    /* Ẩn thanh điều hướng khác nếu cần */
+    .nav {
+        display: none; 
+    }
+
+    /* Đặt các nút đăng nhập và đăng ký ở bên phải, ngang hàng với logo */
+    .user-actions {
+        display: flex; /* Hiển thị các nút theo hàng */
+        align-items: center; /* Căn giữa các nút theo chiều dọc */
+    }
+
+    /* Tùy chỉnh các nút đăng nhập và đăng ký */
+    .user-actions a {
+        margin-left: 10px; /* Khoảng cách giữa các nút */
+        padding: 8px 12px; /* Đệm cho nút */
+        font-size: 14px; /* Kích thước chữ cho nút */
+        text-decoration: none; /* Bỏ gạch chân */
+    }
+    .search-bar {
+        display: flex; /* Hiển thị thanh tìm kiếm */
+        justify-content: center; /* Căn giữa thanh tìm kiếm */
+        width: 100%; /* Để thanh tìm kiếm chiếm hết chiều rộng */
+    }
+
+    /* Tùy chỉnh giao diện thanh tìm kiếm */
+    .search-bar input {
+        width: 80%; /* Đặt chiều rộng của ô tìm kiếm */
+        padding: 8px; /* Đệm cho ô tìm kiếm */
+    }
+
+    .search-bar button {
+        padding: 8px 12px; /* Đệm cho nút tìm kiếm */
+        margin-left: 5px; /* Khoảng cách giữa ô tìm kiếm và nút */
+    }
+}
+@media (max-width: 768px) {
+    .footer-link {
+        display: none; /* Ẩn tất cả các nút */
+    }
+
+    /* Hiển thị các nút Trang chủ, Thể loại và Xếp hạng */
+    .footer-link:nth-child(1), /* Trang chủ */
+    .footer-link:nth-child(2), /* Thể loại */
+    .footer-link:nth-child(3),
+    .footer-link:nth-child(6) { /* Xếp hạng */
+        display: block;
+        margin: 0 3px; /* Khoảng cách bên trái và bên phải giữa các nút */
+        padding: 10px; /* Khoảng cách xung quanh chữ */
+    }
+
+    .footer-container {
+        justify-content: space-between; /* Căn đều các phần tử */
+    }
+}

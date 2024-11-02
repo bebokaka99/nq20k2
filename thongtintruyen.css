@@ -1,56 +1,60 @@
-/* Đặt lại một số phong cách mặc định của trình duyệt */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    /* Đặt lại một số phong cách mặc định của trình duyệt */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-/* Phong cách cơ bản cho phần đầu trang */
-.header {
-    background-color: #333;
-    color: #fff;
-    padding: 15px 0;
-    font-family: Arial, sans-serif;
-}
+    html {
+        font-family: 'Segoe UI';
+    }
 
-/* Container căn giữa và giới hạn chiều rộng */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-}
+    /* Phong cách cơ bản cho phần đầu trang */
+    .header {
+        background-color: #333;
+        color: #fff;
+        padding: 15px 0;
+        font-family: Arial, sans-serif;
+    }
 
-/* Phong cách cho logo */
-.logo img {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    overflow: hidden;
-}
+    /* Container căn giữa và giới hạn chiều rộng */
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
 
-/* Menu điều hướng */
-.nav ul {
-    display: flex;
-    list-style: none;
-    margin-left: 20px;
-}
+    /* Phong cách cho logo */
+    .logo img {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
 
-.nav ul li {
-    margin: 0 10px;
-}
+    /* Menu điều hướng */
+    .nav ul {
+        display: flex;
+        list-style: none;
+        margin-left: 20px;
+    }
 
-.nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-}
+    .nav ul li {
+        margin: 0 10px;
+    }
 
-.nav ul li a:hover {
-    color: #ffcc00;
-}
-/* Thay đổi màu nền tổng thể thành màu đen */
+    .nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .nav ul li a:hover {
+        color: #ffcc00;
+    }
+    /* Thay đổi màu nền tổng thể thành màu đen */
 body {
 background-color: #54504e; /* Màu nền đen cho toàn bộ trang */
 color: #fff; /* Màu chữ trắng để dễ đọc */
@@ -79,146 +83,149 @@ color: #ffcc00; /* Màu chữ cho liên kết khi hover */
 }
 
 
-/* Thanh tìm kiếm */
-.search-bar {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-}
+    /* Thanh tìm kiếm */
+    .search-bar {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
 
-.search-bar {
-    display: flex;
-    align-items: center;
-    margin-left: auto; /* Đẩy thanh tìm kiếm sang bên phải */
-}
+    .search-bar {
+        display: flex;
+        align-items: center;
+        margin-left: auto; /* Đẩy thanh tìm kiếm sang bên phải */
+    }
+    
+    .search-bar form {
+        display: flex;
+    }
+    
+    .search-bar input[type="text"] {
+        padding: 10px 15px;
+        border: 2px solid #ffffff; /* Viền vàng để nổi bật */
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        outline: none;
+        transition: border-color 0.3s ease;
+    }
+    
+    .search-bar input[type="text"]:focus {
+        border-color: #ffffff; /* Thay đổi màu viền khi ô nhập được chọn */
+    }
+    
+    .search-bar button {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 20px;
+        background-color: #ffffff; /* Màu nền cho nút tìm kiếm */
+        color: #000;
+        cursor: pointer;
+        margin-left: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .search-bar button:hover {
+        background-color: #e6b800; /* Màu nền khi hover */
+    }    
+    
+    .user-actions {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-left: 10px;
+    }
 
-.search-bar form {
-    display: flex;
-}
+    .user-actions a {
+        text-decoration: none;
+        font-size: 16px;
+        padding: 8px 15px;
+        border-radius: 20px;
+        font-weight: bold;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
 
-.search-bar input[type="text"] {
-    padding: 10px 15px;
-    border: 2px solid #ffffff; /* Viền vàng để nổi bật */
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #fff;
-    outline: none;
-    transition: border-color 0.3s ease;
-}
+    .user-actions .login {
+        background-color: #000;
+        color: #fff;
+    }
 
-.search-bar input[type="text"]:focus {
-    border-color: #ffffff; /* Thay đổi màu viền khi ô nhập được chọn */
-}
+    .user-actions .register {
+        background-color: #fff;
+        color: #000;
+    }
 
-.search-bar button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 20px;
-    background-color: #ffffff; /* Màu nền cho nút tìm kiếm */
-    color: #000;
-    cursor: pointer;
-    margin-left: 5px;
-    transition: background-color 0.3s ease;
-}
+    .user-actions .login:hover {
+        background-color: #333;
+    }
 
-.search-bar button:hover {
-    background-color: #e6b800; /* Màu nền khi hover */
-}    
+    .user-actions .register:hover {
+        background-color: #ddd;
+    }
 
-.user-actions {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    margin-left: 10px;
-}
+    /* Phong cách cơ bản cho thanh dưới */
+    .footer-bar {
+        background-color: #CC6600; 
+        color: #fff;
+        font-family: Arial, sans-serif;
+        padding: 15px 0;
+    }
 
-.user-actions a {
-    text-decoration: none;
-    font-size: 16px;
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
+    .footer-container {
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 
-.user-actions .login {
-    background-color: #000;
-    color: #fff;
-}
+    .footer-link {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
 
-.user-actions .register {
-    background-color: #fff;
-    color: #000;
-}
+    .footer-link:hover {
+        color: #ffcc00;
+    }
 
-.user-actions .login:hover {
-    background-color: #333;
-}
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
 
-.user-actions .register:hover {
-    background-color: #ddd;
-}
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #000000;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 5px;
+    }
 
-/* Phong cách cơ bản cho thanh dưới */
-.footer-bar {
-    background-color: #CC6600; 
-    color: #fff;
-    font-family: Arial, sans-serif;
-    padding: 15px 0;
-}
+    .dropdown-content a {
+        color: #ffffff;
+        padding: 10px;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+    }
 
-.footer-container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
+    .dropdown-content a:hover {
+        background-color: #780000;
+    }
 
-.footer-link {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.footer-link:hover {
-    color: #ffcc00;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #000000;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 5px;
-}
-
-.dropdown-content a {
-    color: #ffffff;
-    padding: 10px;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-}
-
-.dropdown-content a:hover {
-    background-color: #780000;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .search-bar input[type="text"] {
+        border: 2px solid #ffcc00; /* Viền vàng để nổi bật */
+    }
 /* Phong cách thông tin truyện*/
 .comic-info-container {
     display: flex;
@@ -413,4 +420,86 @@ color: #ffcc00; /* Màu chữ cho liên kết khi hover */
 
 .chapter-list a:hover {
     color: #FF5722; /* Màu cam khi di chuột */
+}
+@media (max-width: 768px) {
+    /* Chỉnh sửa container của thanh điều hướng */
+    .header .container {
+        display: flex; /* Hiển thị theo hàng ngang */
+        align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+        justify-content: space-between; /* Căn đều giữa logo và user-actions */
+    }
+
+    /* Đặt logo ở bên trái */
+    .logo {
+        margin-right: 20px; /* Khoảng cách bên phải để tạo không gian giữa logo và các nút */
+        display: flex; /* Hiển thị flex để có thể căn giữa */
+    }
+
+    /* Ẩn thanh điều hướng khác nếu cần */
+    .nav {
+        display: none; 
+    }
+
+    /* Đặt các nút đăng nhập và đăng ký ở bên phải, ngang hàng với logo */
+    .user-actions {
+        display: flex; /* Hiển thị các nút theo hàng */
+        align-items: center; /* Căn giữa các nút theo chiều dọc */
+    }
+
+    /* Tùy chỉnh các nút đăng nhập và đăng ký */
+    .user-actions a {
+        margin-left: 10px; /* Khoảng cách giữa các nút */
+        padding: 8px 12px; /* Đệm cho nút */
+        font-size: 14px; /* Kích thước chữ cho nút */
+        text-decoration: none; /* Bỏ gạch chân */
+    }
+    .search-bar {
+        display: flex; /* Hiển thị thanh tìm kiếm */
+        justify-content: center; /* Căn giữa thanh tìm kiếm */
+        width: 100%; /* Để thanh tìm kiếm chiếm hết chiều rộng */
+    }
+
+    /* Tùy chỉnh giao diện thanh tìm kiếm */
+    .search-bar input {
+        width: 80%; /* Đặt chiều rộng của ô tìm kiếm */
+        padding: 8px; /* Đệm cho ô tìm kiếm */
+    }
+
+    .search-bar button {
+        padding: 8px 12px; /* Đệm cho nút tìm kiếm */
+        margin-left: 5px; /* Khoảng cách giữa ô tìm kiếm và nút */
+    }
+}
+@media (max-width: 768px) {
+    .footer-link {
+        display: none; /* Ẩn tất cả các nút */
+    }
+
+    /* Hiển thị các nút Trang chủ, Thể loại và Xếp hạng */
+    .footer-link:nth-child(1), /* Trang chủ */
+    .footer-link:nth-child(2), /* Thể loại */
+    .footer-link:nth-child(3),
+    .footer-link:nth-child(6) { /* Xếp hạng */
+        display: block;
+        margin: 0 3px; /* Khoảng cách bên trái và bên phải giữa các nút */
+        padding: 10px; /* Khoảng cách xung quanh chữ */
+    }
+
+    .footer-container {
+        justify-content: space-between; /* Căn đều các phần tử */
+    }
+}
+@media (max-width: 768px) {
+    .comic-info-container {
+        flex-direction: column; /* Đặt hướng flex là cột */
+        align-items: center; /* Căn giữa các phần tử theo chiều ngang */
+    }
+
+    .cover-image {
+        margin-bottom: 20px; /* Thêm khoảng cách dưới ảnh bìa */
+    }
+
+    .comic-details {
+        width: 100%; /* Đặt chiều rộng 100% cho phần chi tiết truyện */
+    }
 }
