@@ -546,4 +546,7 @@ color: #ffcc00; /* Màu chữ cho liên kết khi hover */
     .footer-container {
         justify-content: space-between; /* Căn đều các phần tử */
     }
+    .chapter-content p {
+        font-size: 12px;
+    }
 }
