@@ -490,6 +490,9 @@ color: #ffcc00; /* Màu chữ cho liên kết khi hover */
     }
 }
 @media (max-width: 768px) {
+    .comic-title{
+        text-align: center;
+    }
     .comic-info-container {
         flex-direction: column; /* Đặt hướng flex là cột */
         align-items: center; /* Căn giữa các phần tử theo chiều ngang */
