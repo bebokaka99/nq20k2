@@ -421,6 +421,33 @@ color: #ffcc00; /* Màu chữ cho liên kết khi hover */
 .chapter-list a:hover {
     color: #FF5722; /* Màu cam khi di chuột */
 }
+/*rating*/
+.rating {
+    margin-left: auto; /* Đẩy phần đánh giá sao sang bên phải */
+    direction: rtl;
+    display: inline-flex;
+    font-size: 2.5em; /* Tăng kích thước sao */
+    cursor: pointer;
+}
+
+/* Ẩn các input */
+.rating input {
+    display: none;
+}
+
+/* Sao chưa chọn */
+.rating label {
+    color: #ccc;
+    transition: color 0.2s;
+}
+
+/* Sao khi hover hoặc chọn */
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #ffd700; /* Màu vàng cho sao khi chọn hoặc hover */
+}
+
 @media (max-width: 768px) {
     /* Chỉnh sửa container của thanh điều hướng */
     .header .container {
